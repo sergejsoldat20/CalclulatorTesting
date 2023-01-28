@@ -56,16 +56,15 @@ public class Calculator {
 	                break;
 	            case '/':
 	                if (value == 0) {
-	                    throw new DivisionByZeroException("Dijeljenje sa nulom.");
+	                    throw new DivisionByZeroException("Division by zero is not allowed.");
 	                }
 	                operation = (x, y) -> x / y;
 	                break;
 	            default :
-	            	throw new NotSupportedOperationException("Operacija nije dozvoljena.");
+	            	throw new NotSupportedOperationException("Operation is not allowed.");
 	            
 	        }
 	        this.currentValue = operation.apply(this.currentValue, value);
-	        System.out.println(currentValue);
 	}
 
 }

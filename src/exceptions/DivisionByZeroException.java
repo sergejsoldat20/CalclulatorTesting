@@ -16,7 +16,7 @@ public class DivisionByZeroException extends Exception {
 	
 	/**
 	 * Exception with specific message
-	 * @param message
+	 * @param message If the NumberNotInAreaException exception is thrown, this message will be displayed.
 	 */
 	public DivisionByZeroException(String message) {
 		super(message);

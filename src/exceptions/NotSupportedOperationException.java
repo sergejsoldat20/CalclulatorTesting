@@ -3,7 +3,7 @@ package exceptions;
 /**
  * @author Sergej Soldat
  * @version 1
- * This Exception should be thrown when Calculator is using operation that is not +, -, *, /. 
+ * This Exception should be thrown when operations in methods are not allowed. 
  */
 public class NotSupportedOperationException extends Exception {
 
@@ -16,7 +16,7 @@ public class NotSupportedOperationException extends Exception {
 
 	/**
 	 * Exception with specific message
-	 * @param message
+	 * @param message If the NumberNotInAreaException exception is thrown, this message will be displayed.
 	 */
 	public NotSupportedOperationException(String message) {
 		super(message);

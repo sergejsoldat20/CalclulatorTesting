@@ -2,7 +2,7 @@ package exceptions;
 
 /**
  * @author Sergej Soldat
- * This Exception will be thrown is a number is not in allowed area
+ * This Exception will be thrown is a number is not in allowed area.
  */
 public class NumberNotInAreaException extends Exception {
 
